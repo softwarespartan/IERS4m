@@ -1,12 +1,13 @@
 
-<title>IERS4m</title><meta name="generator" content="MATLAB 8.5">
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>IERS4m</title>
+<meta name="generator" content="MATLAB 8.5">
 <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/">
-<meta name="DC.date" content="2015-07-25">
-<meta name="DC.source" content="Example.m"><style type="text/css">
-
-
-
-<body><div class="content"><h1>IERS4m</h1><p>These classes facilitates the CIO based celestial to terrestrial transformation. The main function is GCRS2ITRS which provides the 3x3 celestial to terrestrial transformation matrix. In order to obtain the necessary EOP information use helper object USNO.m.</p><p>There is a detailed write up in the docs/latex folder which explains this transformation in detail as well as explains the matrix formulation implemented in MATLAB. All relevant references are listed in the References section.  Select papers are avaliable in the docs/refs folder.</p><p>Default 2010 IERS convention.</p><h2>Contents</h2><div><ul><li><a href="#1">Example Usage</a></li><li><a href="#2">Notes on Transforming Velocity and Acceleration</a></li><li><a href="#4">References</a></li></ul></div><h2>Example Usage<a name="1"></a></h2><p>This example is taken from David Vallado's paper listed in the References section.</p><pre class="codeinput"><span class="comment">% date time UTC: 2004/04/06 07:51:28.386</span>
+<meta name="DC.date" content="2015-07-25"><meta name="DC.source" content="Example.m"><style type="text/css">
+</head><body><div class="content"><h1>IERS4m</h1><p>These classes facilitates the CIO based celestial to terrestrial transformation. The main function is GCRS2ITRS which provides the 3x3 celestial to terrestrial transformation matrix. In order to obtain the necessary EOP information use helper object USNO.m.</p><p>There is a detailed write up in the docs/latex folder which explains this transformation in detail as well as explains the matrix formulation implemented in MATLAB. All relevant references are listed in the References section.  Select papers are avaliable in the docs/refs folder.</p><p>Default 2010 IERS convention.</p><h2>Contents</h2><div><ul><li><a href="#1">Example Usage</a></li><li><a href="#2">Notes on Transforming Velocity and Acceleration</a></li><li><a href="#4">References</a></li></ul></div><h2>Example Usage<a name="1"></a></h2><p>This example is taken from David Vallado's paper listed in the References section.</p><pre class="codeinput"><span class="comment">% date time UTC: 2004/04/06 07:51:28.386</span>
 fMJD_UTC = 53101.3274118751;
 
 <span class="comment">% init EOP object</span>
