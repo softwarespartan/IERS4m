@@ -3,7 +3,7 @@ classdef IERS < handle
 %
 % The primary function is GCRS2ITRS which provides the 3x3 celestial to terrestrial transformation matrix.  
 %
-% In order to obtain the necessary EOP information use helper object EOPLib.m
+% In order to obtain the necessary EOP information use helper object USNO.m
 %
 % Default 2010 IERS standards (i.e. Px, Py, Ps coeffs).
 %
@@ -16,10 +16,10 @@ classdef IERS < handle
 %     X_itrs = [x y z];
 %
 %     % initialize the EOP 
-%     eopLib  = EOPLib ();
+%     eopLib  = USNO();
 % 
 %     % get EOP info for time t
-%     [xp,yp,du,dt] = eopLib.getEOP(t);
+%     [xp,yp,du,dt] = USNO.getEOP(t);
 %
 %     % compute the celestial to terrestrial transformation matrix
 %     C2T = IERS.GCRS2ITRS(t,dt,du,xp,yp);
